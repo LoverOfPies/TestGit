@@ -15,6 +15,7 @@ def get_data():
                 resstr = resstr + " -" + data[j].replace(data[i], "")
         result.append(resstr)
     print('test')
+    print('change')
     for i in range(1, len(result)):
         sheet.cell(row=i, column=2).value = result[i-1]
     wb.save('./gr.xlsx')
